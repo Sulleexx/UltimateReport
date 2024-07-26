@@ -1,0 +1,40 @@
+# UltimateReport configuration file
+
+# General Settings
+General:
+  Enable-plugin: true        # Enable plugin? true | false
+  Token: ""                  # Discord bot token
+  IDChannelReport: ""        # ID channel report
+  Plugin-Prefix: "&6[UR]&r"  # Custom chat prefix for plugin messages (use color codes or minimessage format)
+  Permission-Admin: "ultimatereport.admin" # Permission for using admin commands
+# Messages Settings
+Messages:
+  InsufficientArguments: "{prefix} &cInvalid arguments"
+  NotPlayer: "{prefix} &cThis command only for player"
+  NoPermission: "{prefix} &cYou has not permission for use this"
+  UnknownCommand: "{prefix} &cUnknown Command"
+  ReportSent: "{prefix} &cSuccessful sent report"
+  SuccessfulReload: "{prefix} &cSuccessful reload plugin"
+
+ReportFormat:
+  Title: " "
+  Description: "## New report!!!"
+  field-1:
+    Name: "Sender"
+    Value: "{sender}"
+    InLine: true
+  field-2:
+    Name: "Offender"
+    Value: "{offender}"
+    InLine: true
+  field-3:
+    Name: "Report"
+    Value: "{report_text}"
+    InLine: false
+  color: "#00000" # only hex colors support
+  thumbnail:
+    enable: false
+    url: ""
+  image:
+    enable: false
+    url: ""

@@ -1,0 +1,10 @@
+name: UltimateReport
+version: '${project.version}'
+main: sullexxx.ultimatereport.UltimateReport
+api-version: '1.20'
+commands:
+  ultimatereport:
+    aliases: ["ur", "ulr", "ultimater"]
+    description: "UltimateReport command"
+  report:
+    description: "UltimateReport command"
